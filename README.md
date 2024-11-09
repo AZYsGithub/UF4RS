@@ -16,6 +16,10 @@ To use UF4RS:
 2. Also you can implement this pseudo-filesystem into a `ModuleScript`.
 3. You can configure the `rootfs` path and name as needed, this is optional.
 
+## Example
+IYKYK
+No example for you here, just look for filesystem doccumentation on various executors [here](https://github.com/luau/Executor-API-Docs)
+
 ## Credits
 You want to skid it? sure lmao, make sure to credit me or whatever.
 **Chillz_AZY**
