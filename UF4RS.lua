@@ -19,7 +19,6 @@ local function CheckIfExist()
 		return nil
 	end
 end
-print('test')
 if CheckIfExist() then
 	ROOTFS_FOLDER = ROOTFS_PARENT[ROOTFS_NAME]
 else
