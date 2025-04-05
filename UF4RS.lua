@@ -9,13 +9,9 @@ SILENCE_WARN = true
 -- Don't modify it if you don't know what are you doing, or it will break lol.
 local ROOTFS_FOLDER
 local function CheckIfExist()
-	local result = nil
-	local success = pcall(function()
-		result = ROOTFS_PARENT:FindFirstChild(ROOTFS_NAME)
-	end)
-	if success and result then
+	if ROOTFS_PARENT:FindFirstChild(ROOTFS_NAME) then
 		return true
-	elseif not success then
+	else
 		return nil
 	end
 end
