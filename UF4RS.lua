@@ -1,10 +1,10 @@
 -- Environment Setup
 -- You also can use existing path to implement the fs inside the folder
-
-ROOTFS_NAME = "rootfs"
-ROOTFS_PARENT = game.ReplicatedStorage
+ROOTFS_NAME = "workspace" -- Default name is "workspace", due to UNC root folder on most executors name is "workspace".
+ROOTFS_PARENT = game.ReplicatedStorage -- You can put the parent anywhere, but i'd prefer ReplicatedStorage lmao.
 
 SILENCE_WARN = true 
+
 
 -- Don't modify it if you don't know what are you doing, or it will break lol.
 local ROOTFS_FOLDER
