@@ -8,14 +8,8 @@ SILENCE_WARN = true
 
 -- Don't modify it if you don't know what are you doing, or it will break lol.
 local ROOTFS_FOLDER
-local function CheckIfExist()
-	if ROOTFS_PARENT:FindFirstChild(ROOTFS_NAME) then
-		return true
-	else
-		return nil
-	end
-end
-if CheckIfExist() then
+
+if ROOTFS_PARENT:FindFirstChild(ROOTFS_NAME) then
 	ROOTFS_FOLDER = ROOTFS_PARENT[ROOTFS_NAME]
 else
 	if not SILENCE_WARN then
@@ -25,7 +19,6 @@ else
 	ROOTFS_FOLDER = Instance.new("Folder", ROOTFS_PARENT)
 	ROOTFS_FOLDER.Name = ROOTFS_NAME
 end
-
 
 function getInstanceFromPath(path)
 	if path == "" then
